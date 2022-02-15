@@ -1,0 +1,45 @@
+a{text-align: center;}
+/* SKIP: */
+#skip{position: absolute; width: 100%; height: auto; background-color: black; font-size: 0; padding: 0; margin: 0;}
+#skip ul{}
+#skip ul li a{color: white;}
+#skip ul li a:focus{}
+/* HEADER: */
+header{width: 100%; height: 120px; background-color: #f6f5ef; position: fixed; margin: 0 auto; border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: space-between;}
+header h1{width: 75px; height: 75px; display: inline-block;}
+header h1 a{}
+header h1 a img{}
+header nav.tab{display: none; }
+header nav.tab ul{display: flex;}
+header nav.tab ul li{width: 60px; height: 60px; margin: 10px 0 0 1px;}
+header nav.tab ul li a{margin: 14px 0 0 18px;}
+header nav.tab ul li a.login{background: url('../img/icon_user_m.png') no-repeat center center/100% auto; width: 25px; height: 30px; margin: 14px 0 0 18px; display: inline-block;}
+header nav.tab ul li a.find{background: url('../img/icon_spot_m.png') no-repeat center center/100% auto; width: 24px; height: 32px; margin: 12px 0 0 16px; display: inline-block;}
+header nav.tab ul li a.menu{background: url('../img/btn_berger_m.png') no-repeat center center/100% auto; width: 28px; height: 26px; margin: 15px 0 0 11px; display: inline-block;}
+/* MAIN: */
+main{}
+/* SECTION1-new-drinks: */
+section.new-drinks{background: url('../img/2022_Strawberry_main_bg.jpg') no-repeat; height: 646px;}
+
+@media all and (max-width: 1130px){
+    section.new-drinks{
+        height: 58vw;
+        
+    }
+}
+@media all and (max-width: 1400px){
+    section.new-drinks{background-position: 63% bottom;}
+}
+@media all and (max-width: 960px) {
+    header{height: 69px; border-top: none;}
+    header h1{margin: 13px 0 0 10px; width: 45px; height: 45px;}
+    header h1 a img{height: 45px;}
+    nav.tab{display: inline-block; width: 175px; height: 70px; }
+    nav.tab ul{}
+    nav.tab ul li{}
+    nav.tab ul li a.login{}
+    nav.tab ul li a.find{}
+    nav.tab ul li a.menu{}
+}
+@media all and (min-width: 961px) {
+}
