@@ -1,11 +1,13 @@
-a{text-align: center;}
+li{list-style: none;}
+a{text-align: center; text-decoration: none;}
+.inner1120{margin: 0 auto;}
 /* SKIP: */
 #skip{position: absolute; width: 100%; height: auto; background-color: black; font-size: 0; padding: 0; margin: 0;}
 #skip ul{}
 #skip ul li a{color: white;}
 #skip ul li a:focus{}
 /* HEADER: */
-header{width: 100%; height: 120px; background-color: #f6f5ef; position: fixed; margin: 0 auto; border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: space-between;}
+header{width: 100%; height: 120px; background-color: #f6f5ef; position: fixed;  border-top: 2px solid #000; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: space-between;}
 header h1{width: 75px; height: 75px; display: inline-block;}
 header h1 a{}
 header h1 a img{}
@@ -21,7 +23,18 @@ main{}
 /* SECTION1-new-drinks: */
 section.new-drinks{background: url('../img/2022_Strawberry_main_bg.jpg') no-repeat; height: 646px;}
 
+.noticeline{width: 100%; height: 62px; position: relative; display: flex;}
+.noticeline div.notice{width: 50%; background-color: #111; height: 62px; }
+.noticeline div.notice 
+.noticeline div.promotion{width: 50%; height: 62px; line-height: 62px;}
+.noticeline div.promotion a{display: flex; width: 305px; margin-left: 107px;}
+.noticeline div.promotion a img{width: 129px; height: 17px; margin-top: 24px;}
+.noticeline div.promotion a span{display: inline-block; width: 35px; height: 35px; background: url('../img/btn_prom_down.png') no-repeat center center/cover; margin: 15px 70px;}
+
+
+
 @media all and (max-width: 1130px){
+
     section.new-drinks{
         height: 58vw;
         
@@ -42,4 +55,5 @@ section.new-drinks{background: url('../img/2022_Strawberry_main_bg.jpg') no-repe
     nav.tab ul li a.menu{}
 }
 @media all and (min-width: 961px) {
+    .noticeline{}
 }
